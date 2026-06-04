@@ -17,7 +17,7 @@ import Media from "./pages/Media";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-
+import PrivacyPolicy from "./pages/privacypolicy";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -50,6 +50,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

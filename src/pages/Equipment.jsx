@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { Shield } from "lucide-react";
 import { Wrench, Truck, Zap, HardHat } from "lucide-react";
 import PageLayout from "@/components/layout/PageLayout";
 const categories = [
@@ -118,6 +119,7 @@ export default function Equipment() {
         </div>
       </section>
 
+        
       {/* Categories */}
       <section className="py-10 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

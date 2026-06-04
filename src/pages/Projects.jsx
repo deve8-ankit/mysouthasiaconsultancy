@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { Shield } from "lucide-react";
 import { MapPin, Calendar } from "lucide-react";
 import PageLayout from "@/components/layout/PageLayout";
 const categories = ["All", "Infrastructure", "Oil & Gas", "Construction", "Power", "Manpower", "Consultancy"];
@@ -114,6 +115,13 @@ const projects = [
         img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_da90a4e1aa_7ea0a22e98e808df.png",
     },
 ];
+const ongoingProjects = projects.filter(
+  (p) => p.status === "Ongoing"
+);
+
+const completedProjects = projects.filter(
+  (p) => p.status === "Completed"
+);
 export default function Projects() {
     const [activeCategory, setActiveCategory] = useState("All");
     const filtered = activeCategory === "All"
@@ -142,7 +150,75 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Filter */}
+<section className="py-16 bg-[#F4F6F9]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="text-center mb-10">
+      <h2 className="text-3xl font-bold text-[#003366] mb-3">
+        Operational Footprint & Ongoing Projects
+      </h2>
+
+      <p className="text-gray-600 max-w-3xl mx-auto">
+        Figures reflect our active India operations and are updated to align
+        with the SAC Manpower positioning deck (field operations and workforce
+        mobilization).
+      </p>
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      {[
+        {
+          title: "42+",
+          desc: "Active rigs under O&M",
+          subtitle:
+            "Drilling, workover, and jack-up units across ONGC, Oil India, and allied assets.",
+        },
+        {
+          title: "1",
+          desc: "Exploration & Production",
+          subtitle:
+            "South Patan field operations, Gujarat, India.",
+        },
+        {
+          title: "Zero LTI",
+          desc: "HSE Performance Culture",
+          subtitle:
+            "Proven Lost Time Injury track record in high-risk drilling and production environments.",
+        },
+        {
+          title: "Awarded",
+          desc: "ONGC Recognition",
+          subtitle:
+            "Best Performing Rig (2022 — Rig Sagar Shakti) & Best Performing Drilling Rig (2023 — Rig CW-IX), ONGC Chairman awards; Best Drilling award at ONGC Drilling Rig M4900, Saksham 2025–26.",
+        },
+      ].map((item, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.1 }}
+          className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:border-[#C9A227] hover:shadow-md transition-all"
+        >
+          <div className="text-5xl font-bold text-[#C9A227] mb-3">
+            {item.title}
+          </div>
+
+          <h3 className="font-semibold text-[#003366] mb-3">
+            {item.desc}
+          </h3>
+
+          <p className="text-gray-600 text-sm leading-relaxed">
+            {item.subtitle}
+          </p>
+        </motion.div>
+      ))}
+
+    </div>
+  </div>
+</section>
+      {/* Filter
       <section className="py-8 bg-white border-b border-gray-100 sticky top-16 lg:top-20 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 justify-center">
@@ -153,10 +229,11 @@ export default function Projects() {
               </button>))}
           </div>
         </div>
-      </section>
-
+      </section> */}
+      
+      
       {/* Projects Grid */}
-      <section className="py-12 bg-[#F4F6F9]">
+      {/* <section className="py-12 bg-[#F4F6F9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filtered.map((project, i) => (<motion.div key={project.title} layout initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.3, delay: i * 0.05 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
@@ -184,6 +261,211 @@ export default function Projects() {
               </motion.div>))}
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* Ongoing Projects */}
+<section className="py-12 bg-[#F4F6F9]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="mb-12">
+      <h2 className="text-3xl font-bold text-[#003366] mb-3">
+        Ongoing Operations
+      </h2>
+
+      <p className="text-gray-600 max-w-4xl">
+        Current projects being executed across infrastructure,
+        manpower deployment, energy, and industrial sectors.
+      </p>
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {ongoingProjects.map((project, i) => (
+        <motion.div
+          key={project.title}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3, delay: i * 0.05 }}
+          className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group hover:border-[#C9A227]"
+        >
+          <div className="aspect-video overflow-hidden relative">
+            <img
+              src={project.img_url}
+              alt={project.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+
+            <div className="absolute top-3 right-3">
+              <Badge className="bg-green-500 text-white">
+                Ongoing
+              </Badge>
+            </div>
+          </div>
+
+          <div className="p-4">
+            <Badge
+              variant="secondary"
+              className="text-xs text-[#003366] bg-[#003366]/10 mb-2"
+            >
+              {project.category}
+            </Badge>
+
+            <h3 className="font-semibold text-[#003366] mb-2">
+              {project.title}
+            </h3>
+
+            <p className="text-sm text-gray-600 mb-3">
+              {project.desc}
+            </p>
+
+            <div className="flex items-center gap-3 text-xs text-gray-400">
+              <span className="flex items-center gap-1">
+                <Calendar className="w-3 h-3" />
+                {project.year}
+              </span>
+
+              <span className="flex items-center gap-1">
+                <MapPin className="w-3 h-3" />
+                {project.location.split(",")[0]}
+              </span>
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Completed Projects */}
+<section className="py-12 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="mb-12">
+      <h2 className="text-3xl font-bold text-[#003366] mb-3">
+        Completed Projects
+      </h2>
+
+      <p className="text-gray-600 max-w-4xl">
+        Our delivery history spans infrastructure,
+        oil & gas, manpower deployment, power,
+        and industrial development projects across
+        South Asia and the Middle East.
+      </p>
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {completedProjects.map((project, i) => (
+        <motion.div
+          key={project.title}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3, delay: i * 0.05 }}
+          className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group  hover:border-[#C9A227]"
+        >
+          <div className="aspect-video overflow-hidden relative">
+            <img
+              src={project.img_url}
+              alt={project.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+
+            <div className="absolute top-3 right-3">
+              <Badge className="bg-[#C9A227] text-white">
+                Completed
+              </Badge>
+            </div>
+          </div>
+
+          <div className="p-4">
+            <Badge
+              variant="secondary"
+              className="text-xs text-[#003366] bg-[#003366]/10 mb-2"
+            >
+              {project.category}
+            </Badge>
+
+            <h3 className="font-semibold text-[#003366] mb-2">
+              {project.title}
+            </h3>
+
+            <p className="text-sm text-gray-600 mb-3">
+              {project.desc}
+            </p>
+
+            <div className="flex items-center gap-3 text-xs text-gray-400">
+              <span className="flex items-center gap-1">
+                <Calendar className="w-3 h-3" />
+                {project.year}
+              </span>
+
+              <span className="flex items-center gap-1">
+                <MapPin className="w-3 h-3" />
+                {project.location.split(",")[0]}
+              </span>
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+{/* CASE STUDIES */}
+<section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-[#003366] mb-3">
+        Case Studies
+      </h2>
+      <p className="text-gray-600 max-w-2xl mx-auto">
+        Structured narratives highlight the problem we solved, the solution architecture, and measurable results for operators.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {/* Case 1 */}
+      <div className="bg-[#F4F6F9] p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#C9A227] transition-colors">
+        <h3 className="text-xl font-semibold text-[#003366] mb-3">
+          Rig crew surge for offshore campaign
+        </h3>
+
+        <p className="text-sm text-gray-700 mb-2">
+          <span className="font-semibold">Problem:</span> Operator needed vetted drill-floor and maintenance crews within a compressed mobilisation window.
+        </p>
+
+        <p className="text-sm text-gray-700 mb-2">
+          <span className="font-semibold">Solution:</span> SAC deployed multi-discipline crews with aligned HSE documentation and travel logistics.
+        </p>
+
+        <p className="text-sm text-gray-700">
+          <span className="font-semibold">Results:</span> Zero LTI across rotation; on-time spud with full competency verification.
+        </p>
+      </div>
+
+      {/* Case 2 */}
+      <div className="bg-[#F4F6F9] p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#C9A227] transition-colors">
+        <h3 className="text-xl font-semibold text-[#003366] mb-3">
+          Workover campaign acceleration
+        </h3>
+
+        <p className="text-sm text-gray-700 mb-2">
+          <span className="font-semibold">Problem:</span> Workover rigs idle due to specialist shortages in remote basin.
+        </p>
+
+        <p className="text-sm text-gray-700 mb-2">
+          <span className="font-semibold">Solution:</span> Dedicated sourcing cell + rapid mobilisation corridors from Mumbai and Ahmedabad hubs.
+        </p>
+
+        <p className="text-sm text-gray-700">
+          <span className="font-semibold">Results:</span> Reduced NPT days and restored planned completion schedule.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
     </PageLayout>);
 }

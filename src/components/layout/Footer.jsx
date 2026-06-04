@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Building2, MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import PrivacyPolicy from "@/pages/privacypolicy.jsx";
+
 const quickLinks = [
     { label: "Home", path: "/" },
     { label: "About Us", path: "/about" },
@@ -84,15 +86,15 @@ export default function Footer() {
               Contact Us
             </h4>
             <div className="space-y-3 mb-6">
-              <div className="flex gap-2 text-sm text-white/70">
-                <MapPin className="w-4 h-4 text-[#C9A227] mt-0.5 flex-shrink-0"/>
+              <div className="flex gap-2 text-sm text-white/70 hover:text-[#C9A227]">
+                <MapPin className="w-4 h-4 text-[#C9A227]  mt-0.5 flex-shrink-0"/>
                 <span>House 42, Road 11, Banani, Dhaka 1213, Bangladesh</span>
               </div>
-              <div className="flex gap-2 text-sm text-white/70">
+              <div className="flex gap-2 text-sm text-white/70 hover:text-[#C9A227]">
                 <Phone className="w-4 h-4 text-[#C9A227] flex-shrink-0"/>
                 <span>+880 2 9876543</span>
               </div>
-              <div className="flex gap-2 text-sm text-white/70">
+              <div className="flex gap-2 text-sm text-white/70 hover:text-[#C9A227]">
                 <Mail className="w-4 h-4 text-[#C9A227] flex-shrink-0"/>
                 <span>info@southasiaconsultancy.com</span>
               </div>
@@ -115,7 +117,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/50">
           <p>© {new Date().getFullYear()} South Asia Consultancy. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link to="#" className="hover:text-white/80">Privacy Policy</Link>
+            <Link to="/privacypolicy" className="hover:text-white/80">Privacy Policy</Link>
             <Link to="#" className="hover:text-white/80">Terms of Service</Link>
           </div>
         </div>
