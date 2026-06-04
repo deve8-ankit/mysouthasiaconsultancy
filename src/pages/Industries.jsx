@@ -104,7 +104,13 @@ const industries = [
 export default function Industries() {
     return (<PageLayout>
       {/* Hero */}
-      <section className="relative py-20 bg-[#003366] overflow-hidden">
+      <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ad2c101a4b_9937d0ad5026cab7.png')",
+          
+        }}
+      > 
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#C9A227] translate-x-1/2 -translate-y-1/2"/>
         </div>

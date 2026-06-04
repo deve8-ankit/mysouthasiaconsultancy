@@ -24,16 +24,17 @@ const jobCategories = [
 const destinations = ["Saudi Arabia", "UAE", "Qatar", "Kuwait", "Bahrain", "Oman", "Malaysia", "Singapore", "South Korea", "Japan"];
 export default function OverseasRecruitment() {
     return (<PageLayout>
-      {/* Hero */}
-      <section className="relative py-20 bg-[#003366] overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#C9A227] translate-x-1/2 -translate-y-1/2"/>
+      {/* Hero with recruitment banner background */}
+      <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img className="w-full h-full object-cover" src="https://southasiaconsultancy.com/assets/recruitment-pdf/sac-mp-000.png" alt="Recruitment banner background" />
+          <div className="absolute inset-0 bg-[#003366]/80" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <p className="text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-2">Global Manpower Solutions</p>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Overseas Recruitment</h1>
-            <p className="text-white/70 max-w-2xl mx-auto">
+            <p className="text-white/80 max-w-2xl mx-auto">
               Connecting skilled South Asian professionals with leading employers worldwide through ethical, compliant, and efficient recruitment processes.
             </p>
           </motion.div>

@@ -84,8 +84,13 @@ const categoryColors = {
 export default function Media() {
     return (<PageLayout>
       {/* Hero */}
-      <section className="relative py-20 bg-[#003366] overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+<section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://thumbs.dreamstime.com/b/like-button-business-internet-social-media-technology-network-concept-like-button-business-internet-social-media-technology-120796035.jpg')",
+          
+        }}
+      >        <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#C9A227] translate-x-1/2 -translate-y-1/2"/>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
