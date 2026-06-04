@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PageLayout from "@/components/layout/PageLayout";
 const services = [
-    { icon: Briefcase, title: "Management Consultancy", desc: "Strategic advisory services for business growth and operational excellence." },
-    { icon: HardHat, title: "Project Management", desc: "End-to-end project delivery with certified professionals and proven methodologies." },
-    { icon: Settings, title: "Technical Support", desc: "Specialized engineering and technical expertise across sectors." },
-    { icon: Users, title: "HR Solutions", desc: "Comprehensive human resource management and talent acquisition services." },
-    { icon: Globe, title: "Overseas Recruitment", desc: "Sourcing qualified professionals for international placements worldwide." },
-    { icon: TrendingUp, title: "Business Development", desc: "Market entry strategies and business expansion advisory." },
+    { icon: HardHat, title: "Drilling Service", desc: "Complete drilling operations support including well planning, drilling supervision, and optimization of drilling parameters for oil and gas exploration and production." },
+    { icon: HardHat, title: "Workover & Completion", desc: "Specialized workover and well completion services to maintain production efficiency and extend well life in mature oil and gas fields." },
+    { icon: Settings, title: "Operation & Maintenance (O&M)", desc: "Rig maintenance, rotating equipment care, and field operations for offshore and onshore installations.O&M services" },
+    { icon: Users, title: "Oilfield Equipment Services", desc: "SRP units, nitrogen pumping, mobile pumping, generators, and crude logistics aligned to wellsite demand.Nitrogen pumpingPower generation" },
+    { icon: Globe, title: "Manpower Supply", desc: "Skilled workforce, rig crew deployment, and technical staffing for campaign peaks and long-term operations.Overseas recruitment & mobilisation" },
+    { icon: TrendingUp, title: "Nitrogen Pumping Unit Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system." },
 ];
 const industries = [
     { icon: Zap, name: "Oil & Gas", color: "bg-orange-100 text-orange-700" },
