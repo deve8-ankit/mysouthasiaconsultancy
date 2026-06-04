@@ -117,8 +117,14 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/50">
           <p>© {new Date().getFullYear()} South Asia Consultancy. All rights reserved.</p>
           <div className="flex gap-4">
+
             <Link to="/privacypolicy" className="hover:text-white/80">Privacy Policy</Link>
             <Link to="#" className="hover:text-white/80">Terms of Service</Link>
+
+            <Link to="#" className="hover:text-white/80">Privacy Policy</Link>
+             <Link to="/termsandcondition" className="hover:text-white/80">
+    Terms & Conditions
+  </Link>
           </div>
         </div>
       </div>

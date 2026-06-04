@@ -5,12 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PageLayout from "@/components/layout/PageLayout";
 const services = [
-    { icon: Briefcase, title: "Drilling", desc: "Offshore and onshore drilling support, integrated rig services, and specialist crews aligned to campaign HSE and competency standards. Explore drilling services " },
-    { icon: HardHat, title: "Operation and Maintenance Services", desc: "We provide operation and maintenance services for Offshore Drilling Rigs, Onshore Drilling and Workover rigs, Oil and Gas installations, Sucker Rod Pump Units etc." },
-    { icon: Settings, title: "Oil and Gas Exploration", desc: "South Asia specializes in providing integrated logistics solutions to the oil & gas sector. Building on our specialist industry expertise, we provide a comprehensive range of services." },
-    { icon: Users, title: "Nitrogen Pumping Unit Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system." },
-    { icon: Globe, title: "Mobile Steaming Unit Services", desc: "We offer Mobile High Pressure Steaming Unit & Mobile Low Pressure steaming Unit suitable for well tube cleaning , de waxing, line flushing, steam injection in well with end to end service." },
-    { icon: TrendingUp, title: "Mobile Pumping Unit Services", desc: "We offer Mobile Pumping unit services appropriate for pumping fluid like brine, water, oil effluent, etc. with discharge rate of 1540M3 /Hr & 40M3 /Hr and 200 & 400 KG/CM2 working pressure." },
+
+    { icon: HardHat, title: "Drilling Service", desc: "Complete drilling operations support including well planning, drilling supervision, and optimization of drilling parameters for oil and gas exploration and production." },
+    { icon: HardHat, title: "Workover & Completion", desc: "Specialized workover and well completion services to maintain production efficiency and extend well life in mature oil and gas fields." },
+    { icon: Settings, title: "Operation & Maintenance (O&M)", desc: "Rig maintenance, rotating equipment care, and field operations for offshore and onshore installations.O&M services" },
+    { icon: Users, title: "Oilfield Equipment Services", desc: "SRP units, nitrogen pumping, mobile pumping, generators, and crude logistics aligned to wellsite demand.Nitrogen pumpingPower generation" },
+    { icon: Globe, title: "Manpower Supply", desc: "Skilled workforce, rig crew deployment, and technical staffing for campaign peaks and long-term operations.Overseas recruitment & mobilisation" },
+    { icon: TrendingUp, title: "Nitrogen Pumping Unit Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system." },
+
 ];
 const industries = [
     { icon: Zap, name: "Oil & Gas", color: "bg-orange-100 text-orange-700" },
