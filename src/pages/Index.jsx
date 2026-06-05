@@ -185,7 +185,7 @@ export default function Index() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="relative">
               <div className="rounded-xl overflow-hidden shadow-2xl aspect-[4/3]">
-                <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_d51dbea5c1_fc5e40102aa3055e.png" alt="professional business team meeting modern office corporate consultancy South Asia"/>
+                <img className="w-full h-full object-cover" src="https://southasiaconsultancy.com/static/media/AboutSouthAsiaConsultancy.496b7d75.webp" alt="professional business team meeting modern office corporate consultancy South Asia"/>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-[#C9A227] text-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center gap-2">
