@@ -119,9 +119,9 @@ export default function Footer() {
           <div className="flex gap-4">
 
             <Link to="/privacypolicy" className="hover:text-white/80">Privacy Policy</Link>
-            <Link to="#" className="hover:text-white/80">Terms of Service</Link>
+            {/* <Link to="#" className="hover:text-white/80">Terms of Service</Link>
 
-            <Link to="#" className="hover:text-white/80">Privacy Policy</Link>
+            <Link to="#" className="hover:text-white/80">Privacy Policy</Link> */}
              <Link to="/termsandcondition" className="hover:text-white/80">
     Terms & Conditions
   </Link>
