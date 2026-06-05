@@ -11,22 +11,28 @@ const values = [
 ];
 const leadership = [
     {
-        name: "Engr. Md. Rafiqul Islam",
-        title: "Chairman & Founder",
-        bio: "With over 30 years of experience in engineering and management consultancy, Engr. Islam founded South Asia Consultancy with a vision to transform the professional services landscape in the region. His leadership has guided the organization to become a trusted name across multiple industries.",
-        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_2086aca095_77118222a24601dd.png",
+        name: "Mr. Chirag Shah",
+        title: "Chief Financial Officer",
+        bio: "Chief Financial Officer having a strong set of hard skills – technical and analytical competence – and soft skills, such as strategic communication, commercial, interpersonal, and managerial competence. ",
+        img_url: "public/images/chiragShahsir.png",
     },
     {
-        name: "Ms. Farida Begum",
-        title: "Managing Director",
-        bio: "Ms. Begum brings 20 years of strategic management experience to SAC. Her expertise in organizational development and client relationship management has been pivotal in expanding SAC's portfolio across South and Southeast Asia.",
-        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_2086aca095_ac40528538b408cb.png",
+        name: "Manisha Singh Dhami",
+        title: "Operations manager",
+        bio: "14 years of experience in excecution & implementation of operational procedures in Oil & Gas segment.Excellent interpersonal communication,leadership & analytical management skills. Ability to deal with project challenges, team & clients effectively.",
+        img_url: "public/images/Manishaben.png",
     },
     {
-        name: "Engr. Kamal Hossain",
-        title: "Director of Operations",
-        bio: "A certified project management professional (PMP), Engr. Hossain oversees the delivery of all technical and project management engagements, ensuring quality and timeliness across SAC's diverse project portfolio.",
-        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_2086aca095_924acde31006a6ec.png",
+        name: "Mr. M. A. Sheikh",
+        title: "Vice President – Operations",
+        bio: "Mr. M. A. Sheikh is Vice President – Operations at SAC. In this role, he brings industry leading practices with a vision of delivering projects within budget and defined timelines..",
+        img_url: "public/images/Mshaikh.png",
+    },
+    {
+        name: "Adv. Mayank Shah",
+        title: "legal advisor",
+        bio: "Meet Adv. Mayank Shah, a legal luminary boasting LLB, Company Secretary, and B-Com degree. His seasoned expertise enriches our practice, with a stronghold in civil and criminal law, Mayank's litigation mastery forms our legal bedrock.",
+        img_url: "public/images/Advocate.png",
     },
 ];
 export default function About() {
@@ -54,18 +60,16 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="rounded-xl overflow-hidden shadow-xl aspect-[4/3]">
-                <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_583628dfa8_cf16285b8941744b.png" alt="modern corporate office building South Asia consultancy professional exterior architecture"/>
+                <img className="w-full h-full object-cover" src="https://southasiaconsultancy.com/static/media/AboutAsia.946a1dbd.png"/>
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <p className="text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-2">Company Profile</p>
               <h2 className="text-3xl font-bold text-[#003366] mb-5">Two Decades of Professional Excellence</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                South Asia Consultancy (SAC) was incorporated in 2004 with the mission of providing world-class professional and technical services to clients across South Asia and the Middle East. Headquartered in Dhaka, Bangladesh, our firm has grown to become one of the region's most respected consultancy organizations.
-              </p>
+                South Asia Consultancy is an ISO 9001 certified company with headquarter in Ahmedabad, Gujarat, providing oilfield services. SAC was established in 2014 by its sole proprietor Mr. D S Rajput to supply quality manpower to Oil & Gas companies worldwide. SAC began providing Operation & Maintenance Services for various Oilfield activities including Drilling, Workover etc. in onshore as well as offshore and today, SAC is considered as one of the leading company providing Oil and Gas Services.              </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                We serve a diverse portfolio of clients including multinational corporations, government entities, development organizations, and local enterprises across sectors such as Oil & Gas, Infrastructure, Construction, Power, and Manufacturing.
-              </p>
+                SAC has vast experience in managing onshore and offshore drilling rigs up to 3000 HP capacity, Amphion and Cyberbase control, and as latest as 7th generation rigs of reputed make like NOV, Drillmec, LeTourneau, Romania etc.              </p>
               <p className="text-gray-600 leading-relaxed">
                 SAC is ISO 9001:2015 certified and a member of several professional bodies including the Institute of Engineers Bangladesh (IEB) and the Bangladesh Association of International Recruiting Agencies (BAIRA).
               </p>
@@ -84,8 +88,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-[#003366] mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                To provide innovative, high-quality, and cost-effective professional consultancy, project management, and HR solutions that empower our clients to achieve their strategic objectives. We are committed to delivering measurable value through our expertise, integrity, and dedication to excellence.
-              </p>
+                The company’s mission is to provide quality services to upstream, midstream and downstream Oil and Gas Industry from oilfield services to city gas distribution services, manpower consulting and training services at the most reasonable cost.              </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-[#003366] rounded-xl p-8 shadow-sm">
               <div className="w-14 h-14 bg-[#C9A227] rounded-xl flex items-center justify-center mb-5">
@@ -93,8 +96,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
               <p className="text-white/80 leading-relaxed">
-                To be the most trusted and preferred professional services partner in South Asia, recognized for our unwavering commitment to quality, innovation, and the long-term success of our clients and communities. We envision a future where SAC's expertise drives sustainable development across the region.
-              </p>
+                The company’s vision is to be a leading company in global energy sector providing Oil and Gas Services, City Gas Distribution Services through customer centricity, innovative approach and diversification, offering unparalleled services to our customers and excelling in the areas of our operations, keeping safety of people and asset and protection of environment in high priority.              </p>
             </motion.div>
           </div>
         </div>
@@ -108,7 +110,7 @@ export default function About() {
             <h2 className="text-3xl lg:text-4xl font-bold text-[#003366]">Our Core Values</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map((v, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+            {values.map((v, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-md transition-shadow hover:border-[#C9A227] cursor-pointer">
                 <CheckCircle className="w-6 h-6 text-[#C9A227] flex-shrink-0 mt-0.5"/>
                 <div>
                   <h4 className="font-semibold text-[#003366] mb-1">{v.title}</h4>
@@ -126,7 +128,7 @@ export default function About() {
             <p className="text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-2">Our Team</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-[#003366]">Leadership Team</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {leadership.map((leader, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img src={leader.img_url} alt={leader.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
@@ -147,15 +149,15 @@ export default function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
             <Quote className="w-12 h-12 text-[#C9A227] mx-auto mb-6"/>
             <p className="text-white/90 text-lg lg:text-xl leading-relaxed italic mb-8">
-              "When we founded South Asia Consultancy, our goal was simple: to bridge the gap between international best practices and local expertise. Over two decades later, I am proud to say we have not only achieved that goal but have surpassed it. SAC is not just a consultancy firm; it is a community of dedicated professionals committed to building a better tomorrow for South Asia. Our work is our legacy."
+              "The company is headed by efficient, able and futuristic leader. Mr. D.S. Rajput, aged 43 years, is the Managing Director of the company. He has an MBA in International Business, Trade and Tax Law and a B.Tech degree in Mechanical Engineering. He is a petroleum scholar, eminent professor, dynamic leader and a social worker. He has been serving the industry for more than twelve years with a diversified international exposure. He taught and trained so many professionals in different petroleum universities. Presently he is heading the South Asia group and under his dynamic leadership the group has reached a new height. He is the main backbone and pillar of the whole group which is globally doing various operations in upstream Oil and Gas sector. He has experience in managing different types of latest 6th Generation drilling and work over rigs in both onshore and offshore fields. He also serves as Assessor for IWCF well Control School of Group Company South Asia Energy Services Pvt Ltd."
             </p>
             <div className="flex items-center justify-center gap-4">
               <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#C9A227]">
-                <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_b05f1fcb3b_7123514540a8666d.png" alt="professional headshot portrait male executive South Asian chairman formal"/>
+                <img className="w-full h-full object-cover" src="https://southasiaconsultancy.com/static/media/ClientImg.15d9b612.png"/>
               </div>
               <div className="text-left">
-                <p className="font-bold text-white">Engr. Md. Rafiqul Islam</p>
-                <p className="text-[#C9A227] text-sm">Chairman & Founder, SAC</p>
+                <p className="font-bold text-white">Mr. D S Rajput</p>
+                <p className="text-[#C9A227] text-sm">Managing Director, SAC</p>
               </div>
             </div>
           </motion.div>

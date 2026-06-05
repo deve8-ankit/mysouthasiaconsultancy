@@ -11,9 +11,11 @@ const navItems = [
         path: "/services",
         children: [
             { label: "All Services", path: "/services" },
-            { label: "Consultancy", path: "/services" },
-            { label: "Project Management", path: "/services" },
-            { label: "HR Solutions", path: "/services" },
+            { label: "Drilling Services", path: "/services" },
+            { label: "Workover & Completion", path: "/services" },
+            { label: "Operation & Maintenance", path: "/services" },
+            { label: "Oilfield Equipment Services", path: "/services" },
+            { label: "Manpower Supply", path: "/services" },
         ],
     },
     {

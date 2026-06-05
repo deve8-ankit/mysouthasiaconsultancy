@@ -4,24 +4,23 @@ import { X, ZoomIn } from "lucide-react";
 import PageLayout from "@/components/layout/PageLayout";
 const categories = ["All", "Projects", "Office Culture", "Events"];
 const galleryItems = [
-    { category: "Projects", caption: "Chittagong Port Expansion Site", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_c9ec55af8d_ce5f061b7f2fca55.png" },
-    { category: "Projects", caption: "Bridge Construction Supervision", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_f5b6c9e0f1_bd5dd0841e9a1fc1.png" },
-    { category: "Projects", caption: "Power Plant Installation", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_28f46305fa_85520f62e93f14e5.png" },
-    { category: "Projects", caption: "Gas Pipeline Inspection", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_f4b934c448_cb2d0cd954fa0c63.png" },
-    { category: "Projects", caption: "Road Infrastructure Works", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_f866ec6976_28fbd218bebd2311.png" },
-    { category: "Projects", caption: "Factory Construction Phase", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_1f0ddf47c7_4be7d04f795b7fd5.png" },
-    { category: "Office Culture", caption: "SAC Headquarters, Dhaka", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_469b2dcd85_69b88b2993dc1073.png" },
-    { category: "Office Culture", caption: "Team Collaboration Session", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_1e33abe462_ec378cd53c10b2db.png" },
-    { category: "Office Culture", caption: "Training & Development Workshop", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_406ad25bae_998fe48a28c00c7c.png" },
-    { category: "Office Culture", caption: "HR Team at Work", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_91e01bba74_0e0a6e621b5eb74c.png" },
-    { category: "Office Culture", caption: "Leadership Planning Session", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_c19f285b19_dcd43baf23f21615.png" },
-    { category: "Office Culture", caption: "Awards & Recognition Ceremony", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_666ee2fb02_aed3187f038f7509.png" },
-    { category: "Events", caption: "Energy Summit 2025 Participation", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_e0b70bc19a_4f16977b73dd9350.png" },
-    { category: "Events", caption: "20th Anniversary Celebration", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_13d96e8499_c8fea8cbf8bd5973.png" },
-    { category: "Events", caption: "BAIRA Forum Participation", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_a17411c333_b829e8ce58f3b592.png" },
-    { category: "Events", caption: "Digital Transformation Workshop", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_736c4a7d7f_e414ca7789d81610.png" },
-    { category: "Events", caption: "Client Appreciation Dinner", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_8f88284381_deb73386de4a5659.png" },
-    { category: "Events", caption: "Job Fair 2025", img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ecf2bb45da_ec165b38f192e05a.png" },
+    { category: "Projects", caption: "Chittagong Port Expansion Site", img_url: "https://theloadstar.com/wp-content/uploads/5dafdb4e2f3f8959bb6bd72468ade015-680x0-c-default.jpg" },
+    { category: "Projects", caption: "Bridge Construction Supervision", img_url: "https://southasiaconsultancy.com/static/media/Gallary6.f14bc16e.webp" },
+    { category: "Projects", caption: "Power Plant Installation", img_url: "https://upload.wikimedia.org/wikipedia/commons/7/73/Kraftwerk_Niederau%C3%9Fem_2006.jpg" },
+    { category: "Projects", caption: "Gas Pipeline Inspection", img_url: "https://i0.wp.com/revogroupau.com/wp-content/uploads/2022/04/NDT-Inspections-of-Pipelines.jpg?fit=1280%2C720&ssl=1" },
+    { category: "Projects", caption: "Road Infrastructure Works", img_url: "https://avpinfra.com/wp-content/uploads/2025/11/Frame-1-4-1024x683.png" },
+    { category: "Projects", caption: "Factory Construction Phase", img_url: "https://harshithmanufacturers.com/wp-content/uploads/2022/02/Untitled-design-6-1.jpg" },
+    { category: "Office Culture", caption: "SAC Headquarters, Dhaka", img_url: "https://upload.wikimedia.org/wikipedia/commons/6/63/BTCL_HQ%2C_Dhaka.jpg" },
+    { category: "Office Culture", caption: "Team Collaboration Session", img_url: "https://southasiaconsultancy.com/static/media/Gallary3.d795eda3.webp" },
+    { category: "Office Culture", caption: "Training & Development Workshop", img_url: "https://www.fctdtraining.com/wp-content/uploads/2024/03/o9MU0OcP-Schwing-Stetter-India-2-min-1.jpg" },
+    { category: "Office Culture", caption: "HR Team at Work", img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRMD469AP6zPF8LOq-GXBDFiA-G5mAjHd3RQ&s" },
+    { category: "Office Culture", caption: "Leadership Planning Session", img_url: "https://media.licdn.com/dms/image/v2/D4D22AQGP0K1GRv4j9Q/feedshare-shrink_800/B4DZpjS7cIGgAk-/0/1762602498942?e=2147483647&v=beta&t=WbdkfdFLfjryFq11lyMPAX3zHcbfAm3Rs5UhzZ-w5SU" },
+    { category: "Office Culture", caption: "Awards & Recognition Ceremony", img_url: "https://southasiaconsultancy.com/static/media/Gallary4.dfa17d2e.webp" },
+    { category: "Events", caption: "Energy Summit 2025 Participation", img_url: "https://upeswebsitecdn-prod-hphqfhc0b8h2ffhf.a02.azurefd.net/drupal-data/2025-05/Energy%20Summit%202.webp" },
+    { category: "Events", caption: "20th Anniversary Celebration", img_url: "https://iasgyan.sgp1.digitaloceanspaces.com/images/GLOBAL.png" },
+    { category: "Events", caption: "BAIRA Forum Participation", img_url: "https://www.baira.org.bd/media/slider/B6Q8nBVwhVKMgJbPvUJe.jpg" },
+    { category: "Events", caption: "Digital Transformation Workshop", img_url: "https://cdn.digitalindiacorporation.in/wp-content/uploads/2026/05/RKP1027.jpg" },
+    
 ];
 export default function Gallery() {
     const [activeCategory, setActiveCategory] = useState("All");
@@ -30,6 +29,7 @@ export default function Gallery() {
         ? galleryItems
         : galleryItems.filter((item) => item.category === activeCategory);
     return (<PageLayout>
+      
       {/* Hero */}
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
         style={{
@@ -52,8 +52,52 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* Filter */}
-      <section className="py-8 bg-white border-b border-gray-100 sticky top-16 lg:top-20 z-30">
+     
+
+      {/* news blog */}
+      <section className="relative py-20 bg-[#E6F0FA]">
+  
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    {/* Header */}
+    <p className="text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-2">
+      Latest Updates
+    </p>
+
+    <h2 className="text-4xl lg:text-5xl font-bold text-[#003366] mb-4">
+      News & Highlights
+    </h2>
+
+    <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+      Key achievements, contracts, and milestones from South Asia Energy Services.
+    </p>
+
+    {/* News List */}
+    <div className="max-w-4xl mx-auto space-y-6 text-left">
+      
+      {[
+        "SAC’s contract for Crude Transportation Services to transport Selan’s crude from Bakrol, Lohar and Karjasan Field has been extended by Selan for 1 Year w.e.f from July 01, 2020.",
+        "Standard TOR issued by MoEFCC for EIA report preparation for South Patan block re-activation.",
+        "SAC awarded contract for 40 KVA DG set for SRP operations at Bakrol Field on 22 June 2019.",
+        "SAC partnered with Quippo Oil & Gas for 750 HP Workover Rig deployment in Rajasthan (RJ-ON-90/1).",
+        "SAC awarded Mobile Air Compressor Services contract for multiple fields on 04 April 2018."
+      ].map((news, i) => (
+        <div
+          key={i}
+          className="bg-white border border-gray-100 rounded-lg p-5  hover:border-[#C9A227] transition-colors cursor-pointer"
+        >
+          <p className="text-gray-700 text-sm leading-relaxed">
+            <span className="text-[#C9A227] font-semibold mr-2">•</span>
+            {news}
+          </p>
+        </div>
+      ))}
+
+    </div>
+  </div>
+</section>
+       {/* Filter */}
+      <section className="py-8 bg-white border-b border-gray-100 relative top-0 lg:top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-3 justify-center flex-wrap">
             {categories.map((cat) => (<button key={cat} onClick={() => setActiveCategory(cat)} className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === cat
@@ -66,9 +110,9 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-12 bg-[#F4F6F9]">
+      <section className="py-12 bg-[#E6F0FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div layout className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-masonry gap-5">
             <AnimatePresence>
               {filtered.map((item, i) => (<motion.div key={item.caption} layout initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.3, delay: i * 0.04 }} className="relative group cursor-pointer rounded-xl overflow-hidden aspect-square bg-gray-200 shadow-sm" onClick={() => setLightbox(item.img_url)}>
                   <img src={item.img_url} alt={item.caption} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
