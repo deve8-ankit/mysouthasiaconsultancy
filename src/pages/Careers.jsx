@@ -9,63 +9,56 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
+
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import PageLayout from "@/components/layout/PageLayout";
+import ApplyForm from "@/components/ui/applyform";
 const jobs = [
-    {
-        title: "Senior Project Manager",
-        department: "Project Management",
-        location: "Dhaka, Bangladesh",
-        type: "Full-time",
-        experience: "8+ years",
-        deadline: "August 30, 2025",
-        desc: "Lead large-scale infrastructure and construction projects from inception to completion, ensuring quality delivery within budget and schedule.",
-    },
-    {
-        title: "Civil Engineer (Site)",
-        department: "Technical",
-        location: "Chittagong, Bangladesh",
-        type: "Full-time",
-        experience: "3–5 years",
-        deadline: "August 15, 2025",
-        desc: "Provide on-site engineering supervision for ongoing infrastructure projects. Must have experience in road and bridge construction.",
-    },
-    {
-        title: "HR Recruitment Specialist",
-        department: "Human Resources",
-        location: "Dhaka, Bangladesh",
-        type: "Full-time",
-        experience: "2–4 years",
-        deadline: "August 20, 2025",
-        desc: "Source, screen, and process candidates for overseas placements. Strong knowledge of BMET/BAIRA regulations required.",
-    },
-    {
-        title: "Business Development Manager",
-        department: "Business Development",
-        location: "Dhaka, Bangladesh",
-        type: "Full-time",
-        experience: "5–7 years",
-        deadline: "September 10, 2025",
-        desc: "Identify and develop new business opportunities in consultancy and project management sectors across South Asia.",
-    },
-    {
-        title: "HSE Officer",
-        department: "Health, Safety & Environment",
-        location: "Multiple Locations",
-        type: "Contract",
-        experience: "4–6 years",
-        deadline: "August 25, 2025",
-        desc: "Implement and monitor HSE management systems on project sites. NEBOSH certification preferred.",
-    },
-    {
-        title: "Financial Analyst",
-        department: "Finance",
-        location: "Dhaka, Bangladesh",
-        type: "Full-time",
-        experience: "2–4 years",
-        deadline: "September 5, 2025",
-        desc: "Support financial planning, budgeting, and reporting for the organization's growing project portfolio.",
-    },
+  {
+    title: "Instrumentation Technician",
+    department: "Instrumentation",
+    location: "Offshore / Onshore Rig Operations",
+    type: "Full-time",
+    experience: "1–3 Years",
+    deadline: "Open Position",
+    desc: "Matriculation with ITI, Diploma, or Degree in Instrumentation, Instrumentation & Control Systems, Electronics, or equivalent. Requires drilling rig instrumentation experience depending on qualification level.",
+  },
+  {
+    title: "Mechanical Maintenance Engineer",
+    department: "Mechanical",
+    location: "Offshore / Onshore Rig Operations",
+    type: "Full-time",
+    experience: "3–7 Years",
+    deadline: "Open Position",
+    desc: "Degree in Mechanical Engineering with 3 years' experience including maintenance leadership on drilling rigs, or Diploma with 7 years' experience including Mechanical In-Charge or Master Mechanic responsibilities.",
+  },
+  {
+    title: "Mechanical Technician",
+    department: "Mechanical",
+    location: "Offshore / Onshore Rig Operations",
+    type: "Full-time",
+    experience: "2–4 Years",
+    deadline: "Open Position",
+    desc: "Diploma in Mechanical/Automobile Engineering with drilling rig experience, or ITI in Mechanical, Fitter, Diesel Mechanic, Auto Mechanic, or Welding trade with extensive rig maintenance experience.",
+  },
+  {
+    title: "Electrical Technician / Electrician",
+    department: "Electrical",
+    location: "Offshore / Onshore Rig Operations",
+    type: "Full-time",
+    experience: "1–4 Years",
+    deadline: "Open Position",
+    desc: "Degree, Diploma, or ITI in Electrical discipline with drilling rig experience. Must possess valid trade certification and Electrical Licensing Board supervisory competency certificate.",
+  },
+  {
+    title: "Welder",
+    department: "Fabrication & Maintenance",
+    location: "Offshore / Onshore Rig Operations",
+    type: "Full-time",
+    experience: "3+ Years",
+    deadline: "Open Position",
+    desc: "Matriculation with ITI in Welding Trade and minimum 3 years of experience, including at least 1 year working as a drilling rig welder.",
+  },
 ];
 const schema = z.object({
     fullName: z.string().min(2, "Name must be at least 2 characters"),
@@ -132,7 +125,7 @@ export default function Careers() {
             <p className="text-gray-600">Explore our latest job opportunities and find your perfect role.</p>
           </div>
           <div className="space-y-4">
-            {jobs.map((job, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            {jobs.map((job, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-[#C9A227] shadow-md transition-shadow">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-2 mb-2">
@@ -160,7 +153,7 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* Application Form */}
+      {/* Application Form
       <section id="apply-form" className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
@@ -188,7 +181,7 @@ export default function Careers() {
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <Label htmlFor="phone" className="text-sm font-medium text-[#003366]">Phone Number *</Label>
-                  <Input id="phone" {...register("phone")} className="mt-1 bg-white" placeholder="+880 XXXXXXXXXX"/>
+                  <Input id="phone" {...register("phone")} className="mt-1 bg-white" placeholder="+91 XXXXXXXXXX"/>
                   {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
                 </div>
                 <div>
@@ -225,18 +218,37 @@ export default function Careers() {
                 {errors.coverLetter && <p className="text-red-500 text-xs mt-1">{errors.coverLetter.message}</p>}
               </div>
               <div>
-                <Label className="text-sm font-medium text-[#003366]">Resume / CV</Label>
-                <div className="mt-1 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center bg-white hover:border-[#003366] transition-colors cursor-pointer">
-                  <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2"/>
-                  <p className="text-sm text-gray-500">Click to upload or drag & drop</p>
-                  <p className="text-xs text-gray-400 mt-1">PDF, DOC, DOCX (max 5MB)</p>
+                  <Label className="text-sm font-medium text-[#003366]">
+                    Resume / CV *
+                  </Label>
+
+                  <input
+                    type="file"
+                    accept=".pdf,.doc,.docx"
+                    {...register("resume")}
+                    className="hidden"
+                    id="resumeUpload"
+                  />
+
+                  <label
+                    htmlFor="resumeUpload"
+                    className="mt-1 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center bg-white hover:border-[#003366] transition-colors cursor-pointer block"
+                  >
+                    <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
+                    <p className="text-sm text-gray-500">
+                      Click to upload or drag & drop
+                    </p>
+                    <p className="text-xs text-gray-400 mt-1">
+                      PDF, DOC, DOCX (max 5MB)
+                    </p>
+                  </label>
                 </div>
-              </div>
-              <Button type="submit" className="w-full bg-[#003366] hover:bg-[#002244] text-white font-semibold py-3 h-auto">
+                <Button type="submit" className="w-full bg-[#003366] hover:bg-[#002244] text-white font-semibold py-3 h-auto">
                 Submit Application
               </Button>
             </form>)}
         </div>
-      </section>
+      </section> */}
+     <ApplyForm jobs={jobs} />
     </PageLayout>);
 }

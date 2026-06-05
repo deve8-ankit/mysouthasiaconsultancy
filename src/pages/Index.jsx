@@ -5,12 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PageLayout from "@/components/layout/PageLayout";
 const services = [
-    { icon: Briefcase, title: "Management Consultancy", desc: "Strategic advisory services for business growth and operational excellence." },
-    { icon: HardHat, title: "Project Management", desc: "End-to-end project delivery with certified professionals and proven methodologies." },
-    { icon: Settings, title: "Technical Support", desc: "Specialized engineering and technical expertise across sectors." },
-    { icon: Users, title: "HR Solutions", desc: "Comprehensive human resource management and talent acquisition services." },
-    { icon: Globe, title: "Overseas Recruitment", desc: "Sourcing qualified professionals for international placements worldwide." },
-    { icon: TrendingUp, title: "Business Development", desc: "Market entry strategies and business expansion advisory." },
+
+    { icon: HardHat, title: "Drilling Service", desc: "Complete drilling operations support including well planning, drilling supervision, and optimization of drilling parameters for oil and gas exploration and production." },
+    { icon: HardHat, title: "Workover & Completion", desc: "Specialized workover and well completion services to maintain production efficiency and extend well life in mature oil and gas fields." },
+    { icon: Settings, title: "Operation & Maintenance (O&M)", desc: "Rig maintenance, rotating equipment care, and field operations for offshore and onshore installations.O&M services" },
+    { icon: Users, title: "Oilfield Equipment Services", desc: "SRP units, nitrogen pumping, mobile pumping, generators, and crude logistics aligned to wellsite demand.Nitrogen pumpingPower generation" },
+    { icon: Globe, title: "Manpower Supply", desc: "Skilled workforce, rig crew deployment, and technical staffing for campaign peaks and long-term operations.Overseas recruitment & mobilisation" },
+    { icon: TrendingUp, title: "Nitrogen Pumping Unit Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system." },
+
 ];
 const industries = [
     { icon: Zap, name: "Oil & Gas", color: "bg-orange-100 text-orange-700" },
@@ -80,7 +82,7 @@ export default function Index() {
       <section className="relative h-[85vh] min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ae42ba9528_f52c30f590e50fde.png" alt="aerial view of modern corporate business district skyline South Asia professional architecture blue "/>
-          <div className="absolute inset-0 bg-[#003366]/80"/>
+          <div className="absolute inset-0 bg-[#003366]/60"/>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-2xl">
@@ -171,7 +173,7 @@ export default function Index() {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -4 }} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+            {services.map((s, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -4 }} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group  hover:border-[#C9A227]">
                 <div className="w-12 h-12 bg-[#003366]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#003366] transition-colors">
                   <s.icon className="w-6 h-6 text-[#003366] group-hover:text-white transition-colors"/>
                 </div>
@@ -199,7 +201,7 @@ export default function Index() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {industries.map((ind, i) => (<motion.div key={i} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} whileHover={{ scale: 1.05 }}>
                 <Link to="/industries">
-                  <div className="bg-[#F4F6F9] rounded-xl p-5 text-center hover:shadow-md transition-all cursor-pointer border border-gray-100 hover:border-[#003366]/20">
+                  <div className="bg-[#F4F6F9] rounded-xl p-5 text-center hover:shadow-md transition-all cursor-pointer border border-gray-100  hover:border-[#C9A227]">
                     <div className={`w-12 h-12 rounded-full ${ind.color} flex items-center justify-center mx-auto mb-3`}>
                       <ind.icon className="w-6 h-6"/>
                     </div>

@@ -99,6 +99,36 @@ export default function Clients() {
         </div>
       </section>
 
+<section className="py-20 bg-[#F4F6F9]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="text-center max-w-4xl mx-auto">
+
+      <span className="inline-block bg-[#C9A227]/10 text-[#C9A227] text-sm font-semibold px-4 py-2 rounded-full mb-4 uppercase tracking-wider">
+        Proven Performance
+      </span>
+
+      <h2 className="text-4xl lg:text-5xl font-bold text-[#003366] mb-6">
+        Proof in the Field
+      </h2>
+
+      <div className="w-24 h-1 bg-[#C9A227] mx-auto mb-6 rounded-full"></div>
+
+      <p className="text-lg text-gray-600 leading-relaxed mb-6">
+        Long-term relationships with operators, drilling contractors,
+        and service companies have enabled SAC to deliver reliable
+        manpower, operational support, and project execution across
+        complex energy environments.
+      </p>
+
+      <p className="text-[#003366] font-semibold text-lg">
+        Industries We Support • Operations Gallery
+      </p>
+
+    </div>
+
+  </div>
+</section>
       {/* Client Logos - continuous right-to-left marquee */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

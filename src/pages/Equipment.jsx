@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { Shield } from "lucide-react";
 import { Wrench, Truck, Zap, HardHat } from "lucide-react";
 import PageLayout from "@/components/layout/PageLayout";
 const categories = [
@@ -118,11 +119,10 @@ export default function Equipment() {
         </div>
       </section>
 
-
       <section className="py-16 bg-[#F4F6F9]">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    {/* Heading */}
+    { /* Heading */ }
     <div className="text-center mb-10">
       <h2 className="text-3xl font-bold text-[#003366] mb-3">
         Capability Depth
@@ -132,7 +132,7 @@ export default function Equipment() {
       </p>
     </div>
 
-    {/* Cards */}
+    { /* Cards */ }
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
       {[
@@ -167,7 +167,7 @@ export default function Equipment() {
             />
           </div>
 
-          {/* Content */}
+          { /* Content */ }
           <div className="p-5 text-center">
             <h3 className="font-semibold text-[#003366] mb-2">
               {item.title}

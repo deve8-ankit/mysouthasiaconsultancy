@@ -75,7 +75,7 @@ export default function Contact() {
       {/* Registered Office - Top Section */}
       <section className="py-12 bg-blue-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:-translate-y-2 ">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[#003366] rounded-lg flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-[#C9A227]"/>
@@ -103,7 +103,7 @@ export default function Contact() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
-            {offices.map((office, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            {offices.map((office, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-blue-50 rounded-xl p-6 border border-blue-100 hover:border-[#C9A227] transition-colors">
                 <h3 className="text-lg font-bold text-[#003366] mb-3 flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-[#C9A227]"/>
                   {office.city}
@@ -136,9 +136,24 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Map */}
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="rounded-xl overflow-hidden shadow-sm h-96 lg:h-full min-h-[400px]">
-              <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_0b40c8ca45_0011f65a2b03dbd7.png" alt="Google Maps view Dhaka Bangladesh Banani area satellite urban map"/>
-            </motion.div>
+            <motion.div
+  initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  className="rounded-xl overflow-hidden shadow-sm min-h-[400px]"
+>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7339.020141861977!2d72.583659!3d23.115024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83ac30f361e5%3A0x27853233a2e5cb72!2sSouth%20Asia%20Consultancy!5e0!3m2!1sen!2sin!4v1780566033742!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Google Map"
+    className="w-full h-full min-h-[400px]"
+  />
+</motion.div>
 
             {/* Contact Form */}
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
