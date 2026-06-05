@@ -125,7 +125,7 @@ export default function Careers() {
             <p className="text-gray-600">Explore our latest job opportunities and find your perfect role.</p>
           </div>
           <div className="space-y-4">
-            {jobs.map((job, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-[#C9A227] shadow-md transition-shadow">
+            {jobs.map((job, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }} className="bg-white rounded-xl p-6 shadow-sm border border-black-100 hover:border-[#C9A227] shadow-md transition-shadow">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-2 mb-2">

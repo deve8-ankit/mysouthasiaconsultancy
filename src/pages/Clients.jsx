@@ -2,22 +2,23 @@ import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import PageLayout from "@/components/layout/PageLayout";
 const clients = [
-    { name: "Bangladesh Oil, Gas & Mineral Corporation", abbr: "BAPEX", sector: "Oil & Gas" },
-    { name: "Power Grid Company of Bangladesh", abbr: "PGCB", sector: "Power" },
-    { name: "Roads & Highways Department", abbr: "RHD", sector: "Infrastructure" },
-    { name: "Bangladesh Bridge Authority", abbr: "BBA", sector: "Infrastructure" },
-    { name: "Chittagong Port Authority", abbr: "CPA", sector: "Logistics" },
-    { name: "Saudi Aramco", abbr: "ARAMCO", sector: "Oil & Gas" },
-    { name: "BRAC", abbr: "BRAC", sector: "NGO / Development" },
-    { name: "Bashundhara Group", abbr: "BG", sector: "Conglomerate" },
-    { name: "Qatar General Electricity & Water", abbr: "KAHRAMAA", sector: "Power" },
-    { name: "AECOM Bangladesh", abbr: "AECOM", sector: "Consultancy" },
-    { name: "World Bank Group", abbr: "WB", sector: "Development Finance" },
-    { name: "Asian Development Bank", abbr: "ADB", sector: "Development Finance" },
-    { name: "Square Group", abbr: "SQUARE", sector: "Manufacturing" },
-    { name: "Walton Hi-Tech Industries", abbr: "WALTON", sector: "Manufacturing" },
-    { name: "Titas Gas Transmission", abbr: "TITAS", sector: "Oil & Gas" },
-    { name: "Bangladesh Economic Zones Authority", abbr: "BEZA", sector: "Government" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner1.7c40288b.webp" },
+  { logo_url: "https://assets.weforum.org/organization/image/responsive_small_webp_Kw01Ayvx1aNstc5rEN01NI1zJZRIJj4Tz3h3ZWsWnxk.webp" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner3.f5563925.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner4.d8224be2.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner5.20707dbd.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner6.13ad3b21.webp" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner7.4c3057dc.webp" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner8.52cd3760.webp"},
+
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner9.e8b03ca1.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner10.81abe6f5.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner11.f3e4a30a.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner12.305b951e.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner13.bebaa8f3.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner14.3dcb07be.webp"},
+  { logo_url: " https://southasiaconsultancy.com/static/media/Partner16.92c58545.webp"},
+
 ];
 const testimonials = [
     {
@@ -130,24 +131,25 @@ export default function Clients() {
   </div>
 </section>
       {/* Client Logos - continuous right-to-left marquee */}
-      <section className="py-16 lg:py-20 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#003366] mb-3">Our Valued Clients</h2>
-            <p className="text-gray-600 max-w-xl mx-auto">Trusted by leading organizations across South Asia and the Middle East.</p>
+          <div className="text-center mb-6">
+            <h3 className="text-xl font-semibold text-[#003366]">Trusted By</h3>
           </div>
-
           <div className="marquee">
-            <div className="marquee-track">
+           <div className="marquee-track">
               {clients.concat(clients).map((client, i) => (
-                <div key={i} className="marquee-item flex-none bg-[#F4F6F9] rounded-xl p-5 border border-gray-100 text-center mx-3 w-64">
-                  <div className="w-14 h-14 bg-[#003366] rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <span className="text-white font-bold text-xs">{client.abbr}</span>
+                <div
+                  key={i}
+                  className="marquee-item flex-none mx-8 flex items-center justify-center"
+                >
+                  <div className="w-48 h-30 flex items-center justify-center">
+                  <img
+                    src={client.logo_url}
+                    alt={client.name}
+                    className="w-40 h-25 object-contain"
+                  />
                   </div>
-                  <p className="font-medium text-[#003366] text-sm leading-tight mb-2 line-clamp-2">{client.name}</p>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${sectorColors[client.sector] || "bg-gray-100 text-gray-700"}`}>
-                    {client.sector}
-                  </span>
                 </div>
               ))}
             </div>
@@ -163,7 +165,7 @@ export default function Clients() {
             <h2 className="text-3xl font-bold text-[#003366]">Client Testimonials</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.1 }} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col">
+            {testimonials.map((t, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.1 }} className="bg-white rounded-xl p-6 shadow-sm border border-black-100 flex flex-col">
                 <Quote className="w-8 h-8 text-[#C9A227] mb-4"/>
                 <p className="text-gray-600 text-sm leading-relaxed flex-1 mb-5 italic">"{t.quote}"</p>
                 <div className="flex items-center gap-1 mb-4">

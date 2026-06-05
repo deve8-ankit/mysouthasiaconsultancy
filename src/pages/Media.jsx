@@ -4,10 +4,10 @@ import { Badge } from "@/components/ui/badge";
 import PageLayout from "@/components/layout/PageLayout";
 const featured = {
     title: "South Asia Consultancy Celebrates 20 Years of Excellence in Professional Services",
-    date: "July 1, 2025",
+    date: "July 2025",
     category: "Company News",
     desc: "South Asia Consultancy (SAC) proudly marks its 20th anniversary, reflecting on two decades of transformative growth, landmark projects, and unwavering commitment to professional excellence across South Asia and the Middle East.",
-    img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_13d96e8499_08ad65ee6625b846.png",
+    img_url: "https://media.istockphoto.com/id/1160193557/photo/celebration-in-the-office.jpg?s=612x612&w=0&k=20&c=xYNUYIvdrlpURoUHYBOW0QKFJ7TO_HLFSJs4EjdiqVs=",
 };
 const articles = [
     {
@@ -68,7 +68,7 @@ const articles = [
     },
     {
         title: "SAC's HR Solutions Division Reports Record Growth in Q1 2025",
-        date: "March 31, 2025",
+        date: "March 2025",
         category: "Company News",
         excerpt: "Our HR Solutions division reported a 35% increase in client engagements in Q1 2025, driven by strong demand from the manufacturing and construction sectors.",
         img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_0e331367a1_8cebd696f814bbd4.png",
@@ -107,7 +107,7 @@ export default function Media() {
       {/* Featured Article */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="grid lg:grid-cols-2 gap-8 bg-[#F4F6F9] rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="grid lg:grid-cols-2 gap-8 bg-[#F4F6F9] rounded-2xl overflow-hidden border border-black-100 shadow-sm">
             <div className="aspect-video lg:aspect-auto lg:min-h-[300px] overflow-hidden">
               <img src={featured.img_url} alt={featured.title} className="w-full h-full object-cover"/>
             </div>
@@ -129,7 +129,7 @@ export default function Media() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-[#003366] mb-8">Latest Updates</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {articles.map((article, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.08 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group cursor-pointer">
+            {articles.map((article, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.08 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group cursor-pointer hover:border-[#C9A227] transition-colors">
                 <div className="aspect-video overflow-hidden">
                   <img src={article.img_url} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                 </div>

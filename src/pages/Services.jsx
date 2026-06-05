@@ -1,23 +1,23 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Briefcase, HardHat, Settings, Users, Globe, TrendingUp, FileText, Shield, Database, ArrowRight, CheckCircle, Wrench, Truck, Zap } from "lucide-react";
+import { Briefcase,Droplet, HardHat, Settings, Users, Globe, TrendingUp, FileText, Shield, Database, ArrowRight, CheckCircle, Wrench, Truck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageLayout from "@/components/layout/PageLayout";
 const services = [
     {
         id: "drilling",
-        icon: HardHat,
+        icon: Settings,
         title: "Drilling Services",
         desc: "South Asia Consultancy, primarily an Oil and Gas service provider, has diversified in the oil and gas Exploration and...",
         features: [
             
             
         ],
-        img_url: "https://southasiaconsultancy.com/static/media/DrillingService.09984d51.png", className: "bg-contains",
+        img_url: "https://intdrill.com/uploads/0dadfadac17f12d18ab168237df77df5.jpg", className: "bg-contains",
     },
     {
         id: "workover",
-        icon: HardHat,
+        icon: Users,
         title: "Workover & Completion",
         desc: "We are one of the leading service providers for Workover and Completion Services to various Oil and Gas companies in India.",
         features: [
@@ -38,7 +38,7 @@ const services = [
     },
     {
         id: "oilfield-equipment",
-        icon: Wrench,
+        icon: Droplet,
         title: "Oilfield Equipment Services",
         desc: "South Asia Consultancy, primarily an Oil and Gas service provider, has diversified in the oil and gas Exploration and...",
         features: [
@@ -48,7 +48,7 @@ const services = [
     },
     {
         id: "manpower-supply",
-        icon: Users,
+        icon: TrendingUp,
         title: "Nitrogen Pumping Unit Services",
         desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system.",
         features: [
@@ -156,7 +156,7 @@ export default function Services() {
       <section className="py-16 lg:py-20 bg-[#F4F6F9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8">
-            {services.map((service, i) => (<motion.div key={service.id} id={service.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.1 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all group">
+            {services.map((service, i) => (<motion.div key={service.id} id={service.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.1 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all group hover:border-[#C9A227] transition-all cursor-pointer">
                 <div className="aspect-video overflow-hidden">
                   <img src={service.img_url} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                 </div>

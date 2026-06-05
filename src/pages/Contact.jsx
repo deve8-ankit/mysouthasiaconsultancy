@@ -18,25 +18,25 @@ const schema = z.object({
     message: z.string().min(20, "Message must be at least 20 characters"),
 });
 const offices = [
-    {
-        city: "Dhaka (HQ)",
-        address: "House 42, Road 11, Banani, Dhaka 1213, Bangladesh",
-        phone: "+880 2 9876543",
-        email: "dhaka@southasiaconsultancy.com",
+   {
+        city: "Regional Office",
+        address: "1209, 12th Floor, Hubtown Viva Building, Near Mogra Metro Station, Jogeshwari East, Mumbai – 400060",
+        phone: "+91 32442 96543",
+        email: "info@southasiaconsultancy.com",
         hours: "Sun–Thu: 9:00 AM – 6:00 PM",
     },
     {
-        city: "Chittagong",
-        address: "Tower Heights, 4th Floor, Agrabad C/A, Chittagong, Bangladesh",
-        phone: "+880 31 7654321",
-        email: "chittagong@southasiaconsultancy.com",
+        city: "Dubai Office",
+        address: "South Asia Consultancy FZE Saif Plus R6 - 11/B P O BOX 120197 Sharjah - U.A.E.",
+        phone: "+971 4 356 7890",
+        email: "info@southasiaconsultancy.com",
         hours: "Sun–Thu: 9:00 AM – 5:30 PM",
     },
     {
-        city: "Riyadh, Saudi Arabia",
-        address: "Al Olaya District, King Fahd Road, Riyadh 12333, KSA",
-        phone: "+966 11 234 5678",
-        email: "ksa@southasiaconsultancy.com",
+        city: "Operation Office",
+        address: "619 , Palladium Business Hub , Opposite 4D, Chandkheda, Ahmedabad, Gujarat 382424",
+        phone: "+91 11 234 56478",
+        email: "info@southasiaconsultancy.com",
         hours: "Sun–Thu: 8:00 AM – 5:00 PM",
     },
 ];

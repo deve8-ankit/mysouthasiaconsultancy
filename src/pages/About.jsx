@@ -41,7 +41,7 @@ export default function About() {
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img className="w-full h-full object-cover" src="https://southasiaconsultancy.com/static/media/ServicesBanner.ac30089b.webp" alt="Services banner background" />
-          <div className="absolute inset-0 bg-[#003366]/80" />
+          <div className="absolute inset-0 bg-[#003366]/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
@@ -82,7 +82,7 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-[#F4F6F9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:border-[#c9a227]">
               <div className="w-14 h-14 bg-[#003366] rounded-xl flex items-center justify-center mb-5">
                 <Target className="w-7 h-7 text-white"/>
               </div>
@@ -90,7 +90,7 @@ export default function About() {
               <p className="text-gray-600 leading-relaxed">
                 The company’s mission is to provide quality services to upstream, midstream and downstream Oil and Gas Industry from oilfield services to city gas distribution services, manpower consulting and training services at the most reasonable cost.              </p>
             </motion.div>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-[#003366] rounded-xl p-8 shadow-sm">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-[#003366] rounded-xl p-8 shadow-sm border border-transparent hover:border-[#C9A227] border-2 transition-all duration-300">
               <div className="w-14 h-14 bg-[#C9A227] rounded-xl flex items-center justify-center mb-5">
                 <Eye className="w-7 h-7 text-white"/>
               </div>
@@ -109,9 +109,9 @@ export default function About() {
             <p className="text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-2">What Drives Us</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-[#003366]">Our Core Values</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map((v, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-md transition-shadow hover:border-[#C9A227] cursor-pointer">
-                <CheckCircle className="w-6 h-6 text-[#C9A227] flex-shrink-0 mt-0.5"/>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            {values.map((v, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-4 p-5 rounded-xl border border-black-100 hover:shadow-md transition-shadow hover:border-[#C9A227] cursor-pointer bg-[#F4F6F9]">
+                <CheckCircle className="w-6 h-6 text-[#C9A227] flex-shrink-0 mt-0.5 "/>
                 <div>
                   <h4 className="font-semibold text-[#003366] mb-1">{v.title}</h4>
                   <p className="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
@@ -129,7 +129,7 @@ export default function About() {
             <h2 className="text-3xl lg:text-4xl font-bold text-[#003366]">Leadership Team</h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
-            {leadership.map((leader, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+            {leadership.map((leader, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:border-[#C9A227] transition-all cursor-pointer">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img src={leader.img_url} alt={leader.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
                 </div>

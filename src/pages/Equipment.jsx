@@ -155,7 +155,7 @@ export default function Equipment() {
       ].map((item, i) => (
         <div
           key={i}
-          className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition"
+          className="bg-white rounded-xl overflow-hidden shadow-sm border border-black-100 hover:shadow-lg transition hover:border-[#C9A227] transition-colors cursor-pointer"
         >
           
           {/* Image */}
@@ -188,7 +188,7 @@ export default function Equipment() {
       <section className="py-10 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {categories.map((cat, i) => (<div key={i} className="flex items-center gap-3 p-4 rounded-lg bg-[#E6F0FA] border border-gray-100">
+            {categories.map((cat, i) => (<div key={i} className="flex items-center gap-3 p-4 rounded-lg bg-[#E6F0FA] border border-black-100 hover:border-[#C9A227] transition-colors cursor-pointer">
                 <div className="w-10 h-10 bg-[#003366] rounded-lg flex items-center justify-center flex-shrink-0">
                   <cat.icon className="w-5 h-5 text-white"/>
                 </div>
@@ -202,7 +202,7 @@ export default function Equipment() {
       <section className="py-16 bg-[#E6F0FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {equipment.map((item, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 4) * 0.08 }} whileHover={{ y: -4 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-all">
+            {equipment.map((item, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 4) * 0.08 }} whileHover={{ y: -4 }} className="bg-white rounded-xl overflow-hidden shadow-sm border border-black-100 hover:shadow-md transition-all hover:border-[#C9A227] transition-colors cursor-pointer">
                 <div className="aspect-video overflow-hidden bg-gray-50">
                   <img src={item.img_url} alt={item.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
                 </div>

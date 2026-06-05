@@ -1,48 +1,78 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Briefcase, HardHat, Users, Settings, Globe, TrendingUp, Award, ChevronRight, Building2, Zap, Factory, ArrowRight, Calendar } from "lucide-react";
+import { Briefcase, HardHat, Users, Settings, Globe, TrendingUp, Award, ChevronRight, Building2, Zap, Factory, ArrowRight, Calendar, Truck, Wrench, Droplet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import PageLayout from "@/components/layout/PageLayout";
 const services = [
 
-    { icon: HardHat, title: "Drilling Service", desc: "Complete drilling operations support including well planning, drilling supervision, and optimization of drilling parameters for oil and gas exploration and production." },
-    { icon: HardHat, title: "Workover & Completion", desc: "Specialized workover and well completion services to maintain production efficiency and extend well life in mature oil and gas fields." },
-    { icon: Settings, title: "Operation & Maintenance (O&M)", desc: "Rig maintenance, rotating equipment care, and field operations for offshore and onshore installations.O&M services" },
-    { icon: Users, title: "Oilfield Equipment Services", desc: "SRP units, nitrogen pumping, mobile pumping, generators, and crude logistics aligned to wellsite demand.Nitrogen pumpingPower generation" },
-    { icon: Globe, title: "Manpower Supply", desc: "Skilled workforce, rig crew deployment, and technical staffing for campaign peaks and long-term operations.Overseas recruitment & mobilisation" },
-    { icon: TrendingUp, title: "Nitrogen Pumping Unit Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system." },
+    { icon: Users, title: "Workover & Completion Services", desc: "We are one of the leading service providers for Workover and Completion Services to various Oil and Gas companies in India. ", image: "https://f-e-t.com/wp-content/uploads/2024/05/completion-and-workover-tool-banner.jpg" },
+    { icon: Settings, title: "Operation and Maintenance Services", desc: "We provide operation and maintenance services for Offshore Drilling Rigs, Onshore Drilling and Workover rigs, Oil and Gas installations, Sucker Rod Pump Units etc.", image: "https://renesys.in/wp-content/uploads/revslider/solaris-home/slider-4.jpg" },
+    { icon: Wrench , title: "Oil and Gas Exploration", desc: "South Asia Consultancy, primarily an Oil and Gas service provider, has diversified in the oil and gas Exploration and...", image: "https://southasiaconsultancy.com/static/media/Workout3.ebe98ed0.png" },
+    { icon: Truck, title: "Mobile Pumping Unit Services", desc: "We offer Mobile Pumping unit services appropriate for pumping fluid like brine, water, oil effluent, etc. with discharge rate of 1540M3 /Hr & 40M3 /Hr and 200 & 400 KG/CM2 working pressure.", image: "https://productimages.withfloats.com/actual/69748b71a54e10389beabcfe.jpg" },
+    { icon: Droplet, title: "Crude Oil Transportation Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system.", image: "https://5.imimg.com/data5/SELLER/Default/2024/12/474807079/WK/QV/NO/55971546/furnace-oil-transportation-services-500x500.jpeg" },
+    { icon: TrendingUp, title: "Nitrogen Pumping Unit Services", desc: "We offer Nitrogen Pumping Unit services for various oilfield purposes. NPU is a hydraulic heat recovery Liquid Nitrogen Pump and vaporizer system.", image: "https://assets.nov.com/NCP4N68N/at/cwcm7rfpfhpzwp9p5r7r3sp/Nitrogen_Fluid_Combination_Pumping_Unit_side.jpg?auto=webp&format=jpg&width=1920" },
 
 ];
 const industries = [
-    { icon: Zap, name: "Oil & Gas", color: "bg-orange-100 text-orange-700" },
-    { icon: Building2, name: "Infrastructure", color: "bg-blue-100 text-blue-700" },
-    { icon: HardHat, name: "Construction", color: "bg-yellow-100 text-yellow-700" },
-    { icon: Factory, name: "Manufacturing", color: "bg-purple-100 text-purple-700" },
-    { icon: Zap, name: "Power & Energy", color: "bg-green-100 text-green-700" },
-    { icon: Globe, name: "Telecommunications", color: "bg-red-100 text-red-700" },
+    {
+      icon: Zap,
+      name: "Oil & Gas",
+      color: "bg-orange-100 text-orange-700",
+      bg: "https://media.istockphoto.com/id/1381376333/photo/oil-refinery-and-pipeline.jpg?s=612x612&w=0&k=20&c=GUQ79bkV7rU20CvmD79LJYRM2SBX90yQneHY9X8TBS4="
+    },
+    {
+      icon: Building2,
+      name: "Infrastructure",
+      color: "bg-blue-100 text-blue-700",
+      bg: "https://media.istockphoto.com/id/857744498/photo/oil-and-gas-plant-with-shipping-loading-dock-at-twilight.jpg?s=612x612&w=0&k=20&c=a5_1FxBPEyFslPeDFmYVgsfbwuR_Q_jQ5fj0NcipnBM="
+    },
+    {
+      icon: HardHat,
+      name: "Construction",
+      color: "bg-yellow-100 text-yellow-700",
+      bg: "https://media.istockphoto.com/id/922601466/photo/engineering-is-use-notebook-check-and-standing-in-front-of-oil-refinery-building-structure-in.jpg?s=612x612&w=0&k=20&c=jefHShMVnAfQ6tfkJTe4NO7AD09lIZdJ3xYNyg2IdOk="
+    },
+    {
+      icon: Factory,
+      name: "Manufacturing",
+      color: "bg-purple-100 text-purple-700",
+      bg: "https://media.istockphoto.com/id/1049403280/photo/picture-of-two-business-man-standing-in-warehouse-with-helmets-on-their-heads-and-celebrating.jpg?s=612x612&w=0&k=20&c=jINZvu9w1qwHuRu2zE4iyv5Ge2oBwBRHsBR-boRj-iw="
+    },
+    {
+      icon: Zap,
+      name: "Power & Energy",
+      color: "bg-green-100 text-green-700",
+      bg: "https://media.istockphoto.com/id/1450272068/photo/wind-sun-and-water-energy.jpg?s=612x612&w=0&k=20&c=ZisUNSqxdrnH-L7-CuUBBAVCdkE3CY8GEAPsVMgWy6M="
+    },
+    {
+      icon: Globe,
+      name: "Telecommunications",
+      color: "bg-red-100 text-red-700",
+      bg: "https://media.istockphoto.com/id/1346348369/photo/telecommunication-tower-with-connection-points.jpg?s=1024x1024&w=is&k=20&c=_-voopClokXoMJEuv1wNyMP1w4TIOLk_FUnzY56WFao="
+    },
 ];
 const news = [
     {
-        date: "July 10, 2025",
-        category: "Projects",
-        title: "SAC Awarded Major Infrastructure Contract in Chittagong Port Expansion",
-        excerpt: "South Asia Consultancy has secured a landmark contract for consultancy services in the ongoing Chittagong Port expansion project.",
-        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_e59d5781c3_ebb97b7ee8366585.png",
+        date: "2023–2025",
+        category: "Project",
+        title: "Chittagong Port Expansion Phase III",
+        excerpt: "Technical consultancy and project management services for the expansion of container terminal facilities.",
+        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_2d1441761f_453213ca3bfcd61e.png",
     },
     {
-        date: "June 28, 2025",
-        category: "Media",
-        title: "SAC Participates in Regional Energy Summit 2025",
-        excerpt: "Our team represented South Asia Consultancy at the Regional Energy Summit, highlighting our capabilities in the power sector.",
-        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_03b46aca15_f52b757a7198d53b.png",
+        date: "March 2026",
+        category: "Blog",
+        title: "Digital Rig Commissioning Playbook for New Campaign Starts",
+        excerpt: "A commissioning structure that aligns controls, instrumentation, and workforce readiness before first spud.",
+        img_url: "https://images.openai.com/static-rsc-4/Oq2RrEppe80NR_Kdj0UB6KH7qGmFiN_RCcM58ZbhApESIJKHg_8BBDVF3PdQ6PoFVTceZSK-ZEnzH5PCSmO1qqEFjCcld42C6hmBcdhHmriGSrZ-Wrk25EG4aYjVFt0raEBs1YtKoECdVftuCFFdtpYb3nw_AZLhuLSmJ8bdJ2lYlejlGLQ7wnZiDA-2LunS?purpose=fullsize",
     },
     {
-        date: "June 15, 2025",
-        category: "Careers",
-        title: "SAC Expands Overseas Recruitment Division to Meet Growing Demand",
-        excerpt: "In response to increased demand, our Overseas Recruitment division is scaling operations across the Middle East and Southeast Asia.",
-        img_url: "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_3f5a64909b_b212f14e03f871b2.png",
+        date: "April 2026",
+        category: "News",
+        title: "Regional Rig Upgrade Programs Continue to Expand",
+        excerpt: "Multiple markets are extending digital retrofit and upgrade programs for jack-up and land rigs.",
+        img_url: "https://media.istockphoto.com/id/1197084829/photo/fracking-drilling-rig-at-the-golden-hour.jpg?s=612x612&w=0&k=20&c=pKJIRwnClDAjJdUTspYOICLzcDnz0H4_6e_cpW7PiZc=",
     },
 ];
 const stats = [
@@ -54,14 +84,23 @@ const stats = [
 
 // small clients list for homepage marquee
 const clients = [
-  { name: "Bangladesh Oil, Gas & Mineral Corporation", abbr: "BAPEX", sector: "Oil & Gas" },
-  { name: "Power Grid Company of Bangladesh", abbr: "PGCB", sector: "Power" },
-  { name: "Roads & Highways Department", abbr: "RHD", sector: "Infrastructure" },
-  { name: "Bangladesh Bridge Authority", abbr: "BBA", sector: "Infrastructure" },
-  { name: "Chittagong Port Authority", abbr: "CPA", sector: "Logistics" },
-  { name: "Saudi Aramco", abbr: "ARAMCO", sector: "Oil & Gas" },
-  { name: "BRAC", abbr: "BRAC", sector: "NGO / Development" },
-  { name: "Bashundhara Group", abbr: "BG", sector: "Conglomerate" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner1.7c40288b.webp" },
+  { logo_url: "https://assets.weforum.org/organization/image/responsive_small_webp_Kw01Ayvx1aNstc5rEN01NI1zJZRIJj4Tz3h3ZWsWnxk.webp" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner3.f5563925.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner4.d8224be2.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner5.20707dbd.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner6.13ad3b21.webp" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner7.4c3057dc.webp" },
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner8.52cd3760.webp"},
+
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner9.e8b03ca1.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner10.81abe6f5.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner11.f3e4a30a.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner12.305b951e.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner13.bebaa8f3.webp"},
+  { logo_url: "https://southasiaconsultancy.com/static/media/Partner14.3dcb07be.webp"},
+  { logo_url: " https://southasiaconsultancy.com/static/media/Partner16.92c58545.webp"},
+
 ];
 
 const sectorColors = {
@@ -173,17 +212,27 @@ export default function Index() {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -4 }} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group  hover:border-[#C9A227]">
-                <div className="w-12 h-12 bg-[#003366]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#003366] transition-colors">
-                  <s.icon className="w-6 h-6 text-[#003366] group-hover:text-white transition-colors"/>
-                </div>
-                <h3 className="font-semibold text-[#003366] text-lg mb-2">{s.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+            {services.map((s, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -4 }} className="relative p-6 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-all group hover:border-[#C9A227] text-white h-64 flex flex-col justify-end"
+            style={{
+        backgroundImage: `url(${s.image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
+
+        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all"></div>
+
+        <div className="relative z-10">
+        <s.icon className="w-9 h-9 mb-3" />
+        <h3 className="text-lg font-semibold">{s.title}</h3>
+        <p className="text-sm text-white/90 mt-2">{s.desc}</p>
+      </div>
+                
+               
               </motion.div>))}
           </div>
-          <div className="text-center mt-8">
+          <div className="text-center mt-8 hover:border-[#C9A227] ">
             <Link to="/services">
-              <Button variant="outline" className="border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white">
+              <Button variant="outline" className="border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white ">
                 View All Services <ArrowRight className="ml-2 w-4 h-4"/>
               </Button>
             </Link>
@@ -201,13 +250,25 @@ export default function Index() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {industries.map((ind, i) => (<motion.div key={i} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} whileHover={{ scale: 1.05 }}>
                 <Link to="/industries">
-                  <div className="bg-[#F4F6F9] rounded-xl p-5 text-center hover:shadow-md transition-all cursor-pointer border border-gray-100  hover:border-[#C9A227]">
-                    <div className={`w-12 h-12 rounded-full ${ind.color} flex items-center justify-center mx-auto mb-3`}>
-                      <ind.icon className="w-6 h-6"/>
-                    </div>
-                    <p className="font-medium text-[#003366] text-sm">{ind.name}</p>
-                  </div>
-                </Link>
+  <div
+    className="relative rounded-xl p-5 text-center hover:shadow-md transition-all cursor-pointer border border-gray-100 hover:border-[#C9A227] overflow-hidden min-h-[160px]"
+    style={{
+      backgroundImage: `url(${ind.bg})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-black/30"></div>
+
+    {/* Content */}
+    <div className="absolute bottom-2 left-0 right-0 z-100 text-center">
+  <p className="text-white text-lg font-bold drop-shadow-lg">
+    {ind.name}
+  </p>
+</div>
+  </div>
+</Link>
               </motion.div>))}
           </div>
         </div>
@@ -286,22 +347,26 @@ export default function Index() {
             <h3 className="text-xl font-semibold text-[#003366]">Trusted By</h3>
           </div>
           <div className="marquee">
-            <div className="marquee-track">
+           <div className="marquee-track">
               {clients.concat(clients).map((client, i) => (
-                <div key={i} className="marquee-item flex-none bg-[#F4F6F9] rounded-xl p-4 border border-gray-100 text-center mx-3 w-56">
-                  <div className="w-12 h-12 bg-[#003366] rounded-xl flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white font-bold text-xs">{client.abbr}</span>
+                <div
+                  key={i}
+                  className="marquee-item flex-none mx-8 flex items-center justify-center"
+                >
+                  <div className="w-48 h-30 flex items-center justify-center">
+                  <img
+                    src={client.logo_url}
+                    alt={client.name}
+                    className="w-40 h-25 object-contain"
+                  />
                   </div>
-                  <p className="font-medium text-[#003366] text-sm leading-tight mb-1 line-clamp-2">{client.name}</p>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${sectorColors[client.sector] || "bg-gray-100 text-gray-700"}`}>
-                    {client.sector}
-                  </span>
                 </div>
               ))}
             </div>
           </div>
         </div>
       </section>
+
 
     </PageLayout>);
 }

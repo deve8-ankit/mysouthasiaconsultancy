@@ -14,12 +14,12 @@ const quickLinks = [
     { label: "Contact", path: "/contact" },
 ];
 const serviceLinks = [
-    { label: "Consultancy", path: "/services" },
-    { label: "Project Management", path: "/services" },
-    { label: "Technical Support", path: "/services" },
-    { label: "HR Solutions", path: "/services" },
-    { label: "Overseas Recruitment", path: "/overseas-recruitment" },
-    { label: "Equipment Supply", path: "/equipment" },
+    { label: "Drilling Services", path: "/services" },
+    { label: "Workover & Completion", path: "/services" },
+    { label: "Operation & Maintenance (O&M)", path: "/services" },
+    { label: "Oilfield Equipment Services", path: "/services" },
+    { label: "Nitrogen Pumping Unit Services", path: "/overseas-recruitment" },
+    { label: "Mobile Pumping Unit Services", path: "/equipment" },
 ];
 export default function Footer() {
     return (<footer className="bg-[#001a33] text-white">
@@ -28,15 +28,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#C9A227] rounded-md flex items-center justify-center">
-                <Building2 className="w-6 h-6 text-white"/>
-              </div>
-              <div>
-                <p className="font-bold text-base leading-tight">South Asia</p>
-                <p className="text-[#C9A227] text-xs font-medium tracking-wider">CONSULTANCY</p>
-              </div>
-            </Link>
+            <Link to="/" className="flex items-center gap-2 flex-shrink-0">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img
+                src="\public\images\logo.png"
+                alt="South Asia Consultancy"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="hidden sm:block">
+              <p className="text-white font-bold text-sm lg:text-base leading-tight">South Asia</p>
+              <p className="text-[#C9A227] text-xs font-medium tracking-wider">CONSULTANCY</p>
+            </div>
+          </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-5">
               South Asia Consultancy is a leading professional services firm delivering expert consultancy, project management, and HR solutions across South Asia and beyond.
             </p>
@@ -88,15 +92,17 @@ export default function Footer() {
             <div className="space-y-3 mb-6">
               <div className="flex gap-2 text-sm text-white/70 hover:text-[#C9A227]">
                 <MapPin className="w-4 h-4 text-[#C9A227]  mt-0.5 flex-shrink-0"/>
-                <span>House 42, Road 11, Banani, Dhaka 1213, Bangladesh</span>
+                <span>402, Orange Mall, Mehsana Highway, above HDFC Bank, Nigam Nagar, Chandkheda, Ahmedabad, Gujarat 382424</span>
               </div>
               <div className="flex gap-2 text-sm text-white/70 hover:text-[#C9A227]">
                 <Phone className="w-4 h-4 text-[#C9A227] flex-shrink-0"/>
-                <span>+880 2 9876543</span>
+                <span>+91 9316305258</span>
               </div>
               <div className="flex gap-2 text-sm text-white/70 hover:text-[#C9A227]">
                 <Mail className="w-4 h-4 text-[#C9A227] flex-shrink-0"/>
-                <span>info@southasiaconsultancy.com</span>
+                <span><a href="mailto:info@yourcompany.com">
+  info@yourcompany.com
+</a></span>
               </div>
             </div>
             <h4 className="font-semibold text-[#C9A227] mb-3 uppercase tracking-wider text-sm">

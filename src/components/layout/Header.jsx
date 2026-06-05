@@ -58,15 +58,18 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-10 h-10 bg-[#C9A227] rounded-md flex items-center justify-center">
-              <Building2 className="w-6 h-6 text-white"/>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img
+                src="\public\images\logo.png"
+                alt="South Asia Consultancy"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="hidden sm:block">
               <p className="text-white font-bold text-sm lg:text-base leading-tight">South Asia</p>
               <p className="text-[#C9A227] text-xs font-medium tracking-wider">CONSULTANCY</p>
             </div>
           </Link>
-
           {/* Desktop Nav */}
           <nav className="hidden xl:flex items-center gap-1">
             {navItems.slice(0, 12).map((item) => (<div key={item.label} className="relative" onMouseEnter={() => item.children && setOpenDropdown(item.label)} onMouseLeave={() => setOpenDropdown(null)}>

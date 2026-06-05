@@ -1,3 +1,5 @@
+import WhatsAppFloatingButton from "./components/ui/WhatsAppFloatingButton";
+
 import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -40,6 +42,10 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
+
+        <WhatsAppFloatingButton />
+        
+        
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

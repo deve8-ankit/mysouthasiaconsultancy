@@ -358,7 +358,7 @@ export default function Projects() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: i * 0.05 }}
-          className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow group  hover:border-[#C9A227]"
+          className="bg-[#F4F6F9] rounded-xl overflow-hidden shadow-sm border border-black-100 hover:shadow-md transition-shadow group  hover:border-[#C9A227]"
         >
           <div className="aspect-video overflow-hidden relative">
             <img
@@ -423,7 +423,7 @@ export default function Projects() {
     <div className="grid md:grid-cols-2 gap-8">
 
       {/* Case 1 */}
-      <div className="bg-[#F4F6F9] p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#C9A227] transition-colors">
+      <div className="bg-[#F4F6F9] p-6 rounded-xl shadow-sm border border-black-100 hover:border-[#C9A227] transition-colors">
         <h3 className="text-xl font-semibold text-[#003366] mb-3">
           Rig crew surge for offshore campaign
         </h3>
@@ -442,7 +442,7 @@ export default function Projects() {
       </div>
 
       {/* Case 2 */}
-      <div className="bg-[#F4F6F9] p-6 rounded-xl shadow-sm border border-gray-100 hover:border-[#C9A227] transition-colors">
+      <div className="bg-[#F4F6F9] p-6 rounded-xl shadow-sm border border-black-100 hover:border-[#C9A227] transition-colors">
         <h3 className="text-xl font-semibold text-[#003366] mb-3">
           Workover campaign acceleration
         </h3>
