@@ -121,7 +121,7 @@ export default function Index() {
       <section className="relative h-[85vh] min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img className="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ae42ba9528_f52c30f590e50fde.png" alt="aerial view of modern corporate business district skyline South Asia professional architecture blue "/>
-          <div className="absolute inset-0 bg-[#003366]/60"/>
+          <div className="absolute inset-0 bg-[#003366]/20"/>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-2xl">

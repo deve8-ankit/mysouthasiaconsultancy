@@ -41,7 +41,7 @@ export default function About() {
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img className="w-full h-full object-cover" src="https://southasiaconsultancy.com/static/media/ServicesBanner.ac30089b.webp" alt="Services banner background" />
-          <div className="absolute inset-0 bg-[#003366]/50" />
+          <div className="absolute inset-0 bg-[#003366]/30" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>

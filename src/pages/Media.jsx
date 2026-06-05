@@ -87,7 +87,7 @@ export default function Media() {
 <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://thumbs.dreamstime.com/b/like-button-business-internet-social-media-technology-network-concept-like-button-business-internet-social-media-technology-120796035.jpg')",
+            "linear-gradient(rgba(0,51,102,0.4), rgba(0,51,102,0.4)), url('https://thumbs.dreamstime.com/b/like-button-business-internet-social-media-technology-network-concept-like-button-business-internet-social-media-technology-120796035.jpg')",
           
         }}
       >        <div className="absolute inset-0 opacity-10">

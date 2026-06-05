@@ -101,7 +101,7 @@ export default function Equipment() {
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://t4.ftcdn.net/jpg/07/00/51/23/360_F_700512347_sZO49NHpaUYacv3VGVCCWUNfOCcQhked.jpg')",
+            "linear-gradient(rgba(0,51,102,0.4), rgba(0,51,102,0.4)), url('https://t4.ftcdn.net/jpg/07/00/51/23/360_F_700512347_sZO49NHpaUYacv3VGVCCWUNfOCcQhked.jpg')",
           
         }}
       > 

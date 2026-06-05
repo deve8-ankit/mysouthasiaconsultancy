@@ -92,7 +92,7 @@ export default function Industries() {
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://www.niti.gov.in/sites/default/files/2022-11/Industry-I_0.jpg')",
+            "linear-gradient(rgba(0,51,102,0.4), rgba(0,51,102,0.4)), url('https://www.niti.gov.in/sites/default/files/2022-11/Industry-I_0.jpg')",
           
         }}
       > 

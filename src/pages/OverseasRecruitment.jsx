@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Globe, FileText, Shield, Users, ArrowRight, HardHat, Wrench, Stethoscope, Truck, Building2, Zap } from "lucide-react";
+import { Globe, FileText, Droplet, Building, Briefcase, Settings, Shield, Users, ArrowRight, HardHat, Wrench, Stethoscope, Truck, Building2, Zap, BadgeCheck, Clock3, RotateCw, Hammer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PageLayout from "@/components/layout/PageLayout";
 import QuickInquiryForm from "@/components/ui/inquiryform";
@@ -79,12 +79,12 @@ const destinations = [
   },
 ];
 const jobCategories = [
-    { icon: HardHat, name: "Civil & Construction", roles: ["Site Engineer", "Foreman", "Mason", "Welder", "Steel Fixer", "Scaffolder"] },
+    { icon: Hammer, name: "Civil & Construction", roles: ["Site Engineer", "Foreman", "Mason", "Welder", "Steel Fixer", "Scaffolder"] },
     { icon: Wrench, name: "Mechanical & Technical", roles: ["Mechanical Engineer", "Technician", "Electrician", "HVAC Tech", "Plumber", "Pipefitter"] },
     { icon: Stethoscope, name: "Healthcare", roles: ["Registered Nurse", "Medical Technician", "Paramedic", "Pharmacist", "Lab Technician"] },
     { icon: Truck, name: "Transport & Logistics", roles: ["Heavy Driver", "Logistics Coordinator", "Warehouse Manager", "Forklift Operator"] },
     { icon: Building2, name: "Hospitality", roles: ["Chef", "Hotel Staff", "Restaurant Manager", "Housekeeper", "F&B Supervisor"] },
-    { icon: Zap, name: "Oil & Gas", roles: ["Drilling Engineer", "Process Operator", "Instrument Tech", "Safety Officer", "HSE Advisor"] },
+    { icon: Droplet, name: "Oil & Gas", roles: ["Drilling Engineer", "Process Operator", "Instrument Tech", "Safety Officer", "HSE Advisor"] },
 ];
 // const destinations = ["Saudi Arabia", "UAE", "Qatar", "Kuwait", "Bahrain", "Oman", "Malaysia", "Singapore", "South Korea", "Japan"];
 export default function OverseasRecruitment() {
@@ -221,31 +221,31 @@ export default function OverseasRecruitment() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 hover:border-[#C9A227] transition-colors">
             {[
               {
-                icon: Shield,
+                icon: BadgeCheck,
                 title: "100%",
                 desc: "Operator-Led Organization",
                 subtitle: "Field-first delivery DNA",
               },
               {
-                icon: Shield,
+                icon: Globe,
                 title: "4+ Regions",
                 desc: "Global Talent Network",
                 subtitle: "India, GCC, SEA, Africa",
               },
               {
-                icon: Shield,
+                icon: Briefcase,
                 title: "18+ Rigs",
                 desc: "Onshore & Offshore Expertise",
                 subtitle: "Operationally aligned manpower",
               },
               {
-                icon: Shield,
+                icon: Clock3,
                 title: "72 Hrs",
                 desc: "Rapid Mobilization Capability",
                 subtitle: "For urgent requirement response",
               },
               {
-                icon: Shield,
+                icon: RotateCw,
                 title: "360°",
                 desc: "International Compliance Support",
                 subtitle: "Visa, docs, medical, deployment",
@@ -323,25 +323,25 @@ export default function OverseasRecruitment() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 hover:border-[#C9A227] transition-colors">
             {[
               {
-                icon: Shield,
-                title: "Oil and Gas%",
+                icon: Droplet,
+                title: "Oil and Gas",
                 desc: "Onshore & Offshore Operations",
                 subtitle: "Drilling, O&M, Turnarounds",
               },
               {
-                icon: Shield,
+                icon: Settings,
                 title: "Drilling Contractors",
                 desc: "Rig Operations & Maintenance",
                 subtitle: "Diverse rig types & locations",
               },
               {
-                icon: Shield,
+                icon: Building2,
                 title: "EPC Companies",
                 desc: "Project Execution Support",
                 subtitle: "Construction, commissioning, handover",
               },
               {
-                icon: Shield,
+                icon: Building,
                 title: "Refineries & Petrochemical Plants",
                 desc: "Turnaround & Maintenance Staffing",
                 subtitle: "Skilled trades & technical roles",

@@ -82,7 +82,7 @@ export default function Clients() {
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('	https://southasiaconsultancy.com/static/media/Gallerybanner.1848ca0d.webp')",
+            "linear-gradient(rgba(0,51,102,0.3), rgba(0,51,102,0.3)), url('	https://southasiaconsultancy.com/static/media/Gallerybanner.1848ca0d.webp')",
           
         }}
       >
@@ -165,7 +165,7 @@ export default function Clients() {
             <h2 className="text-3xl font-bold text-[#003366]">Client Testimonials</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.1 }} className="bg-white rounded-xl p-6 shadow-sm border border-black-100 flex flex-col">
+            {testimonials.map((t, i) => (<motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.1 }} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col">
                 <Quote className="w-8 h-8 text-[#C9A227] mb-4"/>
                 <p className="text-gray-600 text-sm leading-relaxed flex-1 mb-5 italic">"{t.quote}"</p>
                 <div className="flex items-center gap-1 mb-4">

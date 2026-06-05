@@ -82,7 +82,7 @@ export default function Careers() {
       <section className="relative h-[55vh] min-h-[420px] flex items-center overflow-hidden bg-cover bg-no-repeat"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://www.shutterstock.com/image-photo/career-acceleration-concept-personal-development-260nw-435949057.jpg')",
+            "linear-gradient(rgba(0,51,102,0.3), rgba(0,51,102,0.3)), url('https://www.shutterstock.com/image-photo/career-acceleration-concept-personal-development-260nw-435949057.jpg')",
         }}
       > 
         <div className="absolute inset-0 opacity-10">
